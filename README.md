@@ -1,4 +1,0 @@
-cbx
-===
-
-Conference Beer eXchange

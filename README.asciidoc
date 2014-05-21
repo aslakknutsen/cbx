@@ -1,0 +1,40 @@
+== Conference Beer eXchange
+
+=== Goals
+
+* Connect with other beer lovers on any conference world wide
+* Initiate beer exchange with other users
+
+=== How to run
+
+[source, console]
+----
+vertx run app.rb
+----
+
+Starts up a HTTP server on localhost:8080
+
+==== Available EndPoints
+
+===== Search for Conference (Future event)
+
+http://localhost:8080/api/event/search/${keyword}
+http://localhost:8080/api/event/search/javaone
+
+===== Fetch Conference
+
+http://localhost:8080/api/event/${conference_slug}
+http://localhost:8080/api/event/devnation14
+
+===== Fetch Speakers and Attendees for Conference
+
+http://localhost:8080/api/event/${conference_slug}/people
+http://localhost:8080/api/event/devnation14/people
+
+
+=== TO DO
+
+* Add Untappd vertical
+* Add Auth for Twitter/Untapped
+* Add Neo4J REST vertical for storage
+* Add UI
